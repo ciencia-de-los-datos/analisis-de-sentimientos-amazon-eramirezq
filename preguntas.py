@@ -23,7 +23,7 @@ def pregunta_01():
     # Etiquete la primera columna como `msg` y la segunda como `lbl`. Esta función
     # retorna el dataframe con las dos columnas.
     df = pd.read_csv(
-        'amazon_cells_labelled.tsv',
+        'https://github.com/ciencia-de-los-datos/analisis-de-sentimientos-amazon-eramirezq/blob/ca90401dd940d4fafa4272f52299298d1e909da9/amazon_cells_labelled.tsv',
         sep='\t',
         names=['msg','lbl']
     )
