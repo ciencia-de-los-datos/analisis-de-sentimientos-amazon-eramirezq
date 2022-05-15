@@ -8,7 +8,6 @@ o indterminados (=NULL). En este taller se construirá un modelo de clasificaci�
 Naive Bayes para determinar el sentimiento de un comentario.
 
 """
-from asyncio.windows_utils import pipe
 import numpy as np
 import pandas as pd
 
@@ -23,7 +22,7 @@ def pregunta_01():
     # Etiquete la primera columna como `msg` y la segunda como `lbl`. Esta función
     # retorna el dataframe con las dos columnas.
     df = pd.read_csv(
-        'https://github.com/ciencia-de-los-datos/analisis-de-sentimientos-amazon-eramirezq/blob/ca90401dd940d4fafa4272f52299298d1e909da9/amazon_cells_labelled.tsv',
+        'amazon_cells_labelled.tsv',
         sep='\t',
         names=['msg','lbl']
     )
